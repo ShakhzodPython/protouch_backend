@@ -38,7 +38,11 @@ SECRET_KEY = os.getenv("SECRET_KEY")
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = bool(int(os.getenv("DEBUG")))
 
-ALLOWED_HOSTS = ["*"]
+ALLOWED_HOSTS = [
+    "localhost",
+    "127.0.0.1",
+    "185.191.141.132",
+]
 
 AUTH_USER_MODEL = "users.Customer"
 
@@ -172,9 +176,9 @@ MEDIA_URL = "/media/"
 MEDIA_ROOT = os.path.join(BASE_DIR, "media")
 
 CORS_ALLOWED_ORIGINS = [
-    "http://localhost:8080",
     "http://localhost:5173",
 ]
+
 
 CORS_ALLOW_HEADERS = (
     "accept",
