@@ -42,6 +42,7 @@ ALLOWED_HOSTS = [
     "localhost",
     "127.0.0.1",
     "185.191.141.132",
+    "api.protouch.uz"
 ]
 
 AUTH_USER_MODEL = "users.Customer"
